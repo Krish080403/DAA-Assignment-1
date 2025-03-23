@@ -16,14 +16,17 @@
 - **Vinay Naidu Vanka (2021B3A71026H)**  
   - Implementation of Near Optimal Algorithm  
   - Webpage Hosting  
+  - Report Making
 
 - **Sudarsan Mohanchander (2021B3A70558H)**  
   - Implementation of Optimal Algorithm  
   - Webpage Hosting  
+  - Report Making
 
 - **Mandar Naphade (2021B3A72734H)**  
   - Implementation of Near Optimal Algorithm  
-  - Webpage Hosting  
+  - Webpage Hosting 
+  - Report Making 
 
 ## 📖 Project Description  
 This project focuses on finding **maximal cliques** in graphs by implementing algorithms from three well-known research papers.  
