@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 - Maximal Cliques</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    h1, h2, h3 {
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    canvas {
+      background: #fff;
+      border-radius: 8px;
+      margin: 20px auto;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    .scroll-charts {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000428;
+      color: #aaa;
+      font-size: 14px;
+    }
+    a.github-link {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      color: #00f2fe;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paper 2: Listing All Maximal Cliques in Sparse Graphs in Near-optimal Time</h1>
+    <h3>by David Eppstein, Maarten Loffler, and Darren Strash</h3>
+  </header>
+
+  <a class="github-link" href="https://github.com/your-repo-link-here" target="_blank">View Code on GitHub</a>
+
+<section>
+    <h2>Abstract</h2>
+    <p>This paper presents an optimized algorithm for listing all maximal cliques in sparse graphs, leveraging the concept of *degeneracy, a measure of graph sparsity. The algorithm modifies the classic **Bron–Kerbosch algorithm, using a **degeneracy ordering* and *pivoting strategy* to achieve a near-optimal runtime of \(O(dn^{3d/3})\), where \(d\) is the degeneracy of the graph and \(n\) is the number of vertices. The algorithm is fixed-parameter tractable, meaning it runs efficiently when the degeneracy is small. Additionally, the paper establishes matching upper and lower bounds for the worst-case number of maximal cliques, proving that the algorithm is optimal up to constant factors.
+    </p>
+  </section>
+
+
+  <section>
+    <h2>How the Algorithm Works</h2>
+    <p>
+        The algorithm uses a *degeneracy ordering* to process vertices efficiently, reducing redundant computations. It builds on a modified *Bron–Kerbosch* backtracking method, using degeneracy-based ordering in the outer recursion and pivoting in the inner recursion to minimize calls. At each recursion step, the algorithm splits candidates into potential members (P) and excluded members (X), expanding cliques only from P. This structured approach ensures all maximal cliques are found with optimal time complexity \(O(dn^{3d/3})\), making it highly effective for large, sparse graphs.
+    </p>
+</section>
+
+
+  <section>
+    <h2>Results</h2>
+
+    <section>
+        <h3>Test Case Email-Enron</h3>
+        <p>Number of Maximal Cliques Found: 226859</p>
+        <p>Number of Vertices: 36692</p>
+        <p>Number of Edges: 367662</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="email.png" alt="Email-Enron Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case As-Skitter</h3>
+        <p>Number of Maximal Cliques Found: 37322355</p>
+        <p>Number of Vertices: 1696415</p>
+        <p>Number of Edges: 11095298</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="skitter.png" alt="As-Skitter Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case Wiki-Vote</h3>
+        <p>Number of Maximal Cliques Found: 459002</p>
+        <p>Number of Vertices: 7115</p>
+        <p>Number of Edges: 103689</p>
+        <p>Execution Time: MERA</p>
+        <img src="wiki.png" alt="Wiki-Vote Histogram" width="500" height="350">
+      </section>
+
+    <h3>Average Execution Time: 0.37s</h3>
+  </section>
+
+  <footer>
+    Created by Krish | Ananya | Mandar | Sudarsan | Vinay
+  </footer>
+
+</body>
+</html>

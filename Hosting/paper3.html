@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 - Maximal Cliques</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    h1, h2, h3 {
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    canvas {
+      background: #fff;
+      border-radius: 8px;
+      margin: 20px auto;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    .scroll-charts {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000428;
+      color: #aaa;
+      font-size: 14px;
+    }
+    a.github-link {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      color: #00f2fe;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paper 3: ARBORICITY AND SUBGRAPH LISTING ALGORITHMS</h1>
+    <h3>by NORISHIGE CHIBA AND TAKAO NISHIZEKI</h3>
+  </header>
+
+  <a class="github-link" href="https://github.com/your-repo-link-here" target="_blank">View Code on GitHub</a>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>In this paper we introduce a new simple strategy into edge‐searching of a graph, which is useful to the various subgraph listing problems. Applying the strategy, we obtain the following four algorithms. The first one lists all the triangles in a graph G in O(a(G)·m) time, where m is the number of edges of G and a(G) the arboricity of G. The second finds all the quadrangles in O(a(G)·m) time. Since a(G) is at most three for a planar graph G, both run in linear time for a planar graph. The third lists all the complete subgraphs Kₜ of order t in O(t·a(G)^(t–2)·m) time. The fourth lists all the cliques in O(a(G)·m) time per clique. All the algorithms require linear space. We also establish an upper bound on a(G) for a graph G: a(G) ≤ [(2m+n)^(1/2)/2], where n is the number of vertices in G.
+    </p>
+  </section>
+
+  <section>
+    <h2>How the Algorithm Works</h2>
+    <p>
+        The CLIQUE algorithm efficiently lists all maximal cliques in a graph. It begins by converting the graph into an undirected form and ordering vertices by their degree. The core is a recursive procedure that incrementally builds cliques by exploring vertices one by one. At each step, the algorithm either continues without adding the vertex or forms a new candidate clique by replacing conflicting vertices. It uses two key tests — maximality and lexicographic order — to avoid duplicates and ensure only maximal cliques are generated. The process repeats until all vertices are processed, resulting in the output of all maximal cliques.
+    </p>
+    
+</section>
+
+
+  <section>
+    <h2>Results</h2>
+
+    <section>
+        <h3>Test Case Email-Enron</h3>
+        <p>Number of Maximal Cliques Found: 226859</p>
+        <p>Number of Vertices: 36692</p>
+        <p>Number of Edges: 367662</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="email.png" alt="Email-Enron Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case As-Skitter</h3>
+        <p>Number of Maximal Cliques Found: 37322355</p>
+        <p>Number of Vertices: 1696415</p>
+        <p>Number of Edges: 11095298</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="skitter.png" alt="As-Skitter Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case Wiki-Vote</h3>
+        <p>Number of Maximal Cliques Found: 459002</p>
+        <p>Number of Vertices: 7115</p>
+        <p>Number of Edges: 103689</p>
+        <p>Execution Time: MERA</p>
+        <img src="wiki.png" alt="Wiki-Vote Histogram" width="500" height="350">
+      </section>
+
+    <h3>Average Execution Time: 0.37s</h3>
+  </section>
+
+  <footer>
+    Created by Krish | Ananya | Mandar | Sudarsan | Vinay
+  </footer>
+
+</body>
+</html>

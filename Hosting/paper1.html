@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 - Maximal Cliques</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    h1, h2, h3 {
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    canvas {
+      background: #fff;
+      border-radius: 8px;
+      margin: 20px auto;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    .scroll-charts {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000428;
+      color: #aaa;
+      font-size: 14px;
+    }
+    a.github-link {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      color: #00f2fe;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paper 1: The Worst-Case Time Complexity for Generating All Maximal Cliques and Computational Experiments</h1>
+    <h3>by Etsuji Tomita, Akira Tanaka, Haruhisa Takahashi</h3>
+  </header>
+
+  <a class="github-link" href="https://github.com/your-repo-link-here" target="_blank">View Code on GitHub</a>
+
+  <section>
+    <h2>Abstract</h2>
+    <p>We present a depth-first search algorithm for generating all maximal cliques of an undirected graph, in which pruning methods
+        are employed as in the Bron–Kerbosch algorithm. All the maximal cliques generated are output in a tree-like form. Subsequently,
+        we prove that its worst-case time complexity is O(3n/3) for an n-vertex graph. This is optimal as a function of n, since there exist
+        up to 3n/3 maximal cliques in an n-vertex graph. The algorithm is also demonstrated to run very fast in practice by computational
+        experiments.</p>
+  </section>
+
+  <section>
+    <h2>How the Algorithm Works</h2>
+    <p>
+      The algorithm uses a depth-first search approach to find all maximal cliques in a graph. It starts with an empty set Q representing the current clique and recursively expands it by exploring candidate vertices from a set called SUBG. If SUBG is empty, Q is a maximal clique. Otherwise, each candidate vertex is added to Q, and the search continues within the subgraph induced by that vertex. To avoid redundant computations, the algorithm uses two pruning techniques: skipping already processed vertices and choosing a pivot vertex that reduces the search space. This efficient recursive process ensures all maximal cliques are generated without duplication.
+    </p>
+  </section>
+
+  <section>
+    <h2>Results</h2>
+
+    <section>
+        <h3>Test Case Email-Enron</h3>
+        <p>Number of Maximal Cliques Found: 226859</p>
+        <p>Number of Vertices: 36692</p>
+        <p>Number of Edges: 367662</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="email.png" alt="Email-Enron Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case As-Skitter</h3>
+        <p>Number of Maximal Cliques Found: 37322355</p>
+        <p>Number of Vertices: 1696415</p>
+        <p>Number of Edges: 11095298</p>
+        <p>Execution Time: MERA WALA</p>
+        <img src="skitter.png" alt="As-Skitter Histogram" width="500" height="350">
+      </section>
+
+      <section>
+        <h3>Test Case Wiki-Vote</h3>
+        <p>Number of Maximal Cliques Found: 459002</p>
+        <p>Number of Vertices: 7115</p>
+        <p>Number of Edges: 103689</p>
+        <p>Execution Time: MERA</p>
+        <img src="wiki.png" alt="Wiki-Vote Histogram" width="500" height="350">
+      </section>
+
+    <h3>Average Execution Time: 0.37s</h3>
+  </section>
+
+  <footer>
+    Created by Krish | Ananya | Mandar | Sudarsan | Vinay
+  </footer>
+
+</body>
+</html>
