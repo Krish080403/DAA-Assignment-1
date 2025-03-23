@@ -1,5 +1,10 @@
 # Maximal Clique Finding Algorithms  
-**Names:** Krish Mantri 2021B3A71732H, Ananya Jalan 2021B3A72963H, Vinay Naidu Vanka 2021B3A71026H, Sudarsan Mohanchander 2021B3A70058H, Mandar Naphade 2021B3A72734H  
+**Names and Contribution:**
+Krish Mantri 2021B3A71732H- Implementation of Worst Case Algorithm, Creation of Readme file and Webpage Hosting
+Ananya Jalan 2021B3A72963H- Implementation of Worst Case Algorithm, Creation of Readme file and Webpage Hosting
+Vinay Naidu Vanka 2021B3A71026H- Implementation of Near Optimal Algorithm,and Webpage Hosting
+Sudarsan Mohanchander 2021B3A70558H- Implementation of Optimal Algorithm and Webpage Hosting
+Mandar Naphade 2021B3A72734H- Implementation of Near Optimal Algorithm,and Webpage Hosting
 
 ## 📖 Project Description  
 This project focuses on finding **maximal cliques** in graphs by implementing algorithms from three well-known research papers.  
@@ -20,11 +25,12 @@ We have implemented algorithms from the following research papers:
 *Arboricity and Subgraph Listing Algorithms* by Norishige Chiba and Takao Nishizeki  
 
 ## 📂 Code Files  
-- `paper1.cpp` – Implementation of Paper 1  
-- `paper.cpp` – Implementation of Paper 2  
-- `paper3.cpp` – Implementation of Paper 3  
+- `[paper1.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper1.cpp)` – Implementation of Paper 1  
+- `[paper2.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper2.cpp)` – Implementation of Paper 2  
+- `[paper3.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper3.cpp)` – Implementation of Paper 3  
 
 ## ▶️ How to Run  
 1. Download the code files and test cases from the [Test Case folder](https://github.com/Krish080403/DAA-Assignment-1/tree/main/Test%20Cases).  
 2. Open a terminal and navigate to the directory where the files are saved.  
-3. Run the code using the following command:  
+3. Run the code using the following command:
+ 
