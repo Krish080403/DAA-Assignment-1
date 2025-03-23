@@ -1,4 +1,7 @@
 # Maximal Clique Finding Algorithms  
+
+**[Link to the Webpage consisting of all Results](https://krish080403.github.io/DAA-Assignment-1/Hosting/Main.html)**
+
 **Names and Contribution:**
 Krish Mantri 2021B3A71732H- Implementation of Worst Case Algorithm, Creation of Readme file and Webpage Hosting
 Ananya Jalan 2021B3A72963H- Implementation of Worst Case Algorithm, Creation of Readme file and Webpage Hosting
@@ -25,12 +28,14 @@ We have implemented algorithms from the following research papers:
 *Arboricity and Subgraph Listing Algorithms* by Norishige Chiba and Takao Nishizeki  
 
 ## 📂 Code Files  
-- [paper1.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper1.cpp) – Implementation of Paper 1  
-- [paper2.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper2.cpp) – Implementation of Paper 2  
-- [paper3.cpp](https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper3.cpp) – Implementation of Paper 3  
+- [paper1.cpp](https://github.com/Krish080403/DAA-Assignment-1/Code Files/blob/main/paper1.cpp) – Implementation of Paper 1  
+- [paper2.cpp](https://github.com/Krish080403/DAA-Assignment-1/Code Files/blob/main/paper2.cpp) – Implementation of Paper 2  
+- [paper3.cpp](https://github.com/Krish080403/DAA-Assignment-1/Code Files/blob/main/paper3.cpp) – Implementation of Paper 3  
 
 ## ▶️ How to Run  
 1. Download the code files and test cases from the [Test Case folder](https://github.com/Krish080403/DAA-Assignment-1/tree/main/Test%20Cases).  
 2. Open a terminal and navigate to the directory where the files are saved.  
 3. Run the code using the following command:
-
+For Paper 1- g++ paper1.cpp <testcase_name.txt>
+For Paper 2- g++ -std=c++11 paper2.cpp <testcase_name.txt>
+For Paper 3- g++ paper 3.cpp <testcase_name.txt>

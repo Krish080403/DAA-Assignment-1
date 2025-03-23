@@ -64,12 +64,13 @@
     <h3>by David Eppstein, Maarten Loffler, and Darren Strash</h3>
   </header>
 
-  <a class="github-link" href="https://github.com/Krish080403/DAA-Assignment-1/blob/main/paper2.cpp" target="_blank">View Code on GitHub</a>
+  <a class="github-link" href="https://github.com/Krish080403/DAA-Assignment-1/Code Files/blob/main/paper2.cpp" target="_blank">View Code on GitHub</a>
 
 <section>
     <h2>Abstract</h2>
-    <p>This paper presents an optimized algorithm for listing all maximal cliques in sparse graphs, leveraging the concept of *degeneracy, a measure of graph sparsity. The algorithm modifies the classic **Bron–Kerbosch algorithm, using a **degeneracy ordering* and *pivoting strategy* to achieve a near-optimal runtime of \(O(dn^{3d/3})\), where \(d\) is the degeneracy of the graph and \(n\) is the number of vertices. The algorithm is fixed-parameter tractable, meaning it runs efficiently when the degeneracy is small. Additionally, the paper establishes matching upper and lower bounds for the worst-case number of maximal cliques, proving that the algorithm is optimal up to constant factors.
-    </p>
+    <p>
+      The <em>degeneracy</em> of an <em>n</em>-vertex graph <em>G</em> is the smallest number <em>d</em> such that every subgraph of <em>G</em> contains a vertex of degree at most <em>d</em>. We show that there exists a nearly-optimal fixed-parameter tractable algorithm for enumerating all maximal cliques, parameterized by degeneracy. To achieve this result, we modify the classic Bron–Kerbosch algorithm and show that it runs in time <em>O(dn3<sup>d/3</sup>)</em>. We also provide matching upper and lower bounds showing that the largest possible number of maximal cliques in an <em>n</em>-vertex graph with degeneracy <em>d</em> (when <em>d</em> is a multiple of 3 and <em>n ≥ d + 3</em>) is <em>(n − d)3<sup>d/3</sup></em>. Therefore, our algorithm matches the <em>Θ(d(n − d)3<sup>d/3</sup>)</em> worst-case output size of the problem whenever <em>n − d = Ω(n)</em>.
+      </p>
   </section>
 
 
